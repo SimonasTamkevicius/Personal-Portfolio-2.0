@@ -42,6 +42,10 @@ textarea:hover {
   cursor: url("/textCursor.png"), text;
 }
 
+.website-logo {
+  cursor: url("/hoverCursor.png"), pointer;
+}
+
 /* Navbar styles */
 .navbar-item {
   font-family: var(--primary-font);
@@ -350,6 +354,14 @@ textarea:hover {
 }
 
 .visit-button:hover {
+  border: solid 1px #389cdc;
+  scale: 110%;
+  cursor: url("/hoverCursor.png"), pointer;
+  color: #389cdc;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-button:hover {
   border: solid 1px #389cdc;
   scale: 110%;
   cursor: url("/hoverCursor.png"), pointer;

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import NavBar from './NavBar';
 import { LuExternalLink } from "react-icons/lu";
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
     useEffect(() => {
@@ -65,9 +66,14 @@ const Projects = () => {
             </div>
           </div>
           {/*Coming soon project card*/}
-          <div className='flex flex-col border-2 border-black rounded-lg shadow-xl project-card-3 max-h-[75px]'>
+          <div className='flex flex-col border-2 border-black rounded-lg shadow-xl project-card-3 max-h-[150px]'>
             <div className='flex flex-col justify-between mx-5 lg:mx-5 space-y-5 my-5'>
                 <h1 className='text-2xl font-semibold project-3-title'>more to come...</h1>
+                <div className='flex justify-start'>
+                    <Link to="/contact" className='flex flex-row space-x-1 justify-center items-center mt-2 border border-black p-2 rounded-xl contact-button'>
+                        <p>let's connect!</p>
+                    </Link>
+                </div>
             </div>
           </div>
         </div>

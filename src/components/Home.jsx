@@ -9,7 +9,7 @@ const Home = () => {
       <NavBar active="home" />
       <div className='flex flex-col lg:grid grid-cols-12 lg:mt-20 mx-10 lg:mx-20 justify-center items-center'>
         <div className='col-span-5 rounded-full overflow-hidden lg:mt-0 w-52 h-52 md:h-64 md:w-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 border-2 border-black'>
-          <img src='/simonasDrawnImageRed.jpeg' alt='Logo' />
+          <img src='/simonasDrawnImageRed.jpeg' alt='Logo' className='website-logo' />
         </div>
         <div className='col-span-7 flex flex-col justify-center items-center lg:items-start mt-10 lg:mt-0'>
                 <div className='font-semibold wrapper'>
