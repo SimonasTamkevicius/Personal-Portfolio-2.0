@@ -149,7 +149,7 @@ textarea:hover {
 
 /****************Home Page Styles***************/
 
-/*typing animation css*/
+/*typing animation*/
 .wrapper {
   display: grid;
   place-items: start;
@@ -627,6 +627,38 @@ textarea:focus {
     opacity: 1;
   }
 }
+
+@keyframes dotBlink {
+  0% {
+    opacity: 1;
+    width: 1ch;
+  }
+  50% {
+    opacity: 1;
+    width: 2ch;
+  }
+  100% {
+    opacity: 1;
+    width: 3ch;
+  }
+}
+
+.dot-animation {
+  display: inline-block;
+  width: 3ch;
+  overflow: hidden;
+}
+
+.dot-animation::after {
+  content: "...";
+  display: inline-block;
+  width: 3ch;
+  overflow: hidden;
+  animation: dotBlink steps(3) 1s infinite;
+}
+
+
+
 
 
 

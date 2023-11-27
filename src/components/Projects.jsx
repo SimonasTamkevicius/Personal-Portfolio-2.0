@@ -57,7 +57,7 @@ const Projects = () => {
                     <img src='/awsIcon.png' className='h-6' />
                 </div>
               </div>
-              <a href='https://comilla-website.vercel.app' target='_blank' className='flex justify-end items-end'>
+              <a href='https://comillainc.com' target='_blank' className='flex justify-end items-end'>
                 <div className='flex flex-row justify-center items-center space-x-2 border border-black rounded-xl p-2 visit-button'>
                     <p>visit</p>
                     <LuExternalLink className='external-link text-xl font-semibold' />
