@@ -369,6 +369,12 @@ textarea:hover {
   transition: all 0.3s ease-in-out;
 }
 
+.icon-container {
+  width: 50;
+  display: flex;
+  align-items: center;
+}
+
 .project-card-1 {
   opacity: 0;
   background-color: #FFF;
