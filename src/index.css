@@ -431,7 +431,7 @@ textarea:hover {
   opacity: 0;
   background-color: #FFF;
   animation: card-slid-in 1s forwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.75s;
 }
 
 .project-card-3 .project-3-title {
@@ -446,11 +446,37 @@ textarea:hover {
   width: 0;
   height: 2px;
   background-color: #389cdc; 
-  transition: width 0.5s ease;
+  transition: width 0.75s ease;
 }
 
 .project-card-3:hover .project-3-title::before {
   width: 15ch;
+}
+
+.project-card-4 {
+  opacity: 0;
+  background-color: #FFF;
+  animation: card-slid-in 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.project-card-4 .project-4-title {
+  position: relative;
+}
+
+.project-card-4 .project-4-title::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #389cdc; 
+  transition: width 0.5s ease;
+}
+
+.project-card-4:hover .project-4-title::before {
+  width: 18ch;
 }
 
 @keyframes card-slid-in {

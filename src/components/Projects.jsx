@@ -68,7 +68,6 @@ const Projects = () => {
                   <div className='icon-container'>
                     <img src='/reactIcon.png' className='h-6' alt='React' />
                   </div>
-                  {/* Add other icon containers here */}
                   <div className='icon-container'>
                     <img src='/nodeJSIcon.png' className='h-6' alt='Node.js' />
                   </div>
@@ -83,6 +82,40 @@ const Projects = () => {
                   </div>
                 </div>
                 <a href='https://comillainc.com' target='_blank' className='flex justify-end items-end mt-auto'>
+                  <div className='flex flex-row justify-center items-center space-x-2 border border-black rounded-xl p-2 visit-button'>
+                    <p>visit</p>
+                    <LuExternalLink className='external-link text-xl font-semibold' />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-col justify-between border-2 border-black rounded-lg shadow-xl project-card-4'>
+            <div className='flex flex-col justify-between mx-5 lg:mx-5 space-y-5 my-5 h-full'>
+              <h1 className='text-2xl font-semibold project-4-title'>barber booking app</h1>
+              <p className='text-sm'>
+                This barber booking app allows for users to book appointments with their barbers. Additionally, it also allows for the barbers to manage their profiles and bookings.<br/>Test it by going to settings, and log in as, email: jamesc@email.com password: test123
+              </p>
+              <div className='flex flex-col justify-between h-full mt-auto'>
+                <h1 className='font-bold'>built using:</h1>
+                <div className='flex flex-wrap justify-start items-center gap-5 mt-2'>
+                  <div className='icon-container'>
+                    <img src='/reactIcon.png' className='h-6' alt='React' />
+                  </div>
+                  <div className='icon-container'>
+                    <img src='/nodeJSIcon.png' className='h-6' alt='Node.js' />
+                  </div>
+                  <div className='icon-container'>
+                    <img src='/expressJSIcon.png' className='h-6' alt='Express.js' />
+                  </div>
+                  <div className='icon-container'>
+                    <img src='/mongoDBIcon.png' className='h-6' alt='MongoDB' />
+                  </div>
+                  <div className='icon-container'>
+                    <img src='/awsIcon.png' className='h-6' alt='AWS' />
+                  </div>
+                </div>
+                <a href='https://barber-booking-orpin.vercel.app/' target='_blank' className='flex justify-end items-end mt-auto'>
                   <div className='flex flex-row justify-center items-center space-x-2 border border-black rounded-xl p-2 visit-button'>
                     <p>visit</p>
                     <LuExternalLink className='external-link text-xl font-semibold' />
