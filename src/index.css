@@ -284,13 +284,18 @@ textarea:hover {
 
 .speech-bubble {
   opacity: 0;
+  flex: auto;
   position: relative;
+  justify-content: center;
+  align-items: center;
   background: url('/speechBubble.svg.png') no-repeat;
   background-size: contain;
 }
 
 .speech-bubble h1 {
-  padding-bottom: 50px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 50px;
   font-family: var(--secondary-font);
 }
 
