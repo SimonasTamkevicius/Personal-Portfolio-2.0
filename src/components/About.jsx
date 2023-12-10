@@ -16,7 +16,7 @@ const About = () => {
                 </div>
                 <div>
                     <p className='mt-5 text-center text-md xl:text-md intro-text md:leading-8'>
-                        I'm currently on a journey to become a developer, pursuing my studies in Computer Science at the University of Guelph.<br></br>My passion lies in web development, and I've had the opportunity to work with a diverse range of technologies thus far.<br></br>
+                        I'm currently on a journey to become a developer, pursuing my studies in Computer Science at the University of Guelph.<br></br>My passion lies in software developement, and I've had the opportunity to work with a diverse range of technologies thus far.<br></br>
 
                         Beyond coding, I find joy in immersing myself in the world of sports, with a particular soft spot for basketball.<br></br>
 
