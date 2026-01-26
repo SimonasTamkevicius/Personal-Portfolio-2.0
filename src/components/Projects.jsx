@@ -53,13 +53,13 @@ const Projects = () => {
   const [activeFile, setActiveFile] = useState(projectsData[0]);
 
   return (
-    <div className="overflow-hidden">
+    <div className="h-screen overflow-hidden flex flex-col">
       <NavBar active="projects" />
 
       {/* Main Content Area */}
-      <div className="w-full p-2 lg:p-8 flex flex-col items-center justify-center min-h-[calc(100vh-150px)]">
-        <div className="w-full border-4 border-black flex flex-col lg:flex-row shadow-[4px_4px_0px_0px_rgba(0,0,0,0.1)] lg:shadow-[8px_8px_0px_0px_#000000] overflow-hidden bg-white h-full flex-1">
-          <div className="w-full lg:w-[350px] flex flex-col border-b-4 lg:border-b-0 lg:border-r-4 border-black bg-white shrink-0 h-full lg:h-full z-20">
+      <div className="flex-1 w-full p-2 lg:p-8 flex flex-col min-h-0">
+        <div className="flex-1 w-full border-4 border-black flex flex-col lg:flex-row shadow-[4px_4px_0px_0px_rgba(0,0,0,0.1)] lg:shadow-[8px_8px_0px_0px_#000000] overflow-hidden bg-white">
+          <div className="w-full lg:w-[350px] flex flex-col border-b-4 lg:border-b-0 lg:border-r-4 border-black bg-white shrink-0 h-full z-20">
             <div className="p-3 lg:p-6 border-b-2 border-dashed border-gray-300 flex justify-between items-center bg-gray-50 shrink-0 min-h-[70px]">
               {/* Increased min-h to 70px to prevent vertical clipping */}
               <div className="typing-projects text-xl lg:text-2xl font-bold pr-2 tracking-tight leading-relaxed py-1">
