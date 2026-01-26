@@ -3,15 +3,18 @@
 @tailwind utilities;
 
 :root {
-  font-family: 'Inconsolata', monospace;
-  --primary-font: 'Anonymous Pro', monospace;
-  --secondary-font: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
+  --primary-font: "Inconsolata", monospace;
+  --secondary-font: "Inconsolata", monospace;
   line-height: 1.5;
   font-weight: 400;
+  font-size: 16px;
 
-  cursor: url("/icons8-cursor-48.png") 10 0, auto;
+  cursor:
+    url("/icons8-cursor-48.png") 10 0,
+    auto;
 
-  background-color: #FFF;
+  background-color: #fff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -31,7 +34,9 @@ button {
 }
 
 input:hover {
-  cursor: url("/textCursor.png") 20 20, text;
+  cursor:
+    url("/textCursor.png") 20 20,
+    text;
 }
 
 textarea {
@@ -84,7 +89,7 @@ textarea:hover {
 
 .navbar-item-active::after {
   font-family: var(--primary-font);
-  content: '';
+  content: "";
   display: block;
   position: relative;
   bottom: 0;
@@ -110,13 +115,19 @@ textarea:hover {
   -ms-animation: fadeDown ease 1s;
 }
 @keyframes fadeDown {
-  0% {opacity:0; transform: translateY(-40px);}
-  100% {opacity:1; transform: translateY(0px);}
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 /*Burger Menu CSS*/
- /* Initial state for the burger menu */
- .burger-menu {
+/* Initial state for the burger menu */
+.burger-menu {
   display: flex;
   position: fixed;
   overflow: hidden;
@@ -124,7 +135,7 @@ textarea:hover {
   align-items: center;
   top: 0;
   right: -200%;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   line-height: 75px;
   width: 100%;
   height: 100%;
@@ -157,7 +168,9 @@ textarea:hover {
 
 .typing-home {
   width: 19ch;
-  animation: typing 1.5s steps(19), blink 1s step-end infinite;
+  animation:
+    typing 1.5s steps(19),
+    blink 1s step-end infinite;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -167,12 +180,12 @@ textarea:hover {
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 }
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
 
@@ -199,7 +212,7 @@ textarea:hover {
 }
 
 .more-about-me:hover p {
-  color: #FF0000;
+  color: #ff0000;
 }
 
 .more-about-me .arrow {
@@ -207,7 +220,7 @@ textarea:hover {
 }
 
 .more-about-me:hover .arrow {
-  color: #FF0000;
+  color: #ff0000;
   transform: translateX(10px);
   animation: arrow-slide-right 1s forwards;
 }
@@ -234,11 +247,12 @@ textarea:hover {
   }
 }
 
-
 /************** About Styles ***************/
 .typing-about {
   width: 5ch;
-  animation: typing 0.5s steps(5) forwards, blink-title 1s step-end forwards;
+  animation:
+    typing 0.5s steps(5) forwards,
+    blink-title 1s step-end forwards;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -265,38 +279,21 @@ textarea:hover {
   overflow: hidden;
 }
 
-.image-slide-up {
-  opacity: 0;
-  overflow: hidden;
-  animation: image-slide-up 1s forwards 0.5s;
-}
-
-@keyframes image-slide-up {
-  0% {
-    opacity: 1;
-    transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .speech-bubble {
   opacity: 0;
-  flex: auto;
+  display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
-  background: url('/speechBubble.svg.png') no-repeat;
-  background-size: contain;
+  background: url("/speechBubble.svg.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 1.5rem;
+  padding-bottom: 3rem;
 }
 
 .speech-bubble h1 {
-  margin-left: 12px;
-  margin-right: 12px;
-  margin-bottom: 50px;
   font-family: var(--secondary-font);
+  margin: 0;
 }
 
 .speech-bubble-animation {
@@ -325,13 +322,13 @@ textarea:hover {
 }
 
 .projects-link:hover {
-  color: #FF0000;
+  color: #ff0000;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
 
 .linked-in:hover {
-  color: #0077B5;
+  color: #0077b5;
   scale: 115%;
   transition: all 0.2s ease-in-out;
 }
@@ -345,7 +342,9 @@ textarea:hover {
 /**************Projects Styles**************/
 .typing-projects {
   width: 10ch;
-  animation: typing 0.75s steps(10) forwards, blink-title 1s step-end forwards;
+  animation:
+    typing 0.75s steps(10) forwards,
+    blink-title 1s step-end forwards;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -382,7 +381,7 @@ textarea:hover {
 
 .project-card-1 {
   opacity: 0;
-  background-color: #FFF;
+  background-color: #fff;
   overflow: hidden;
   animation: card-slid-in 1s forwards;
 }
@@ -392,13 +391,13 @@ textarea:hover {
 }
 
 .project-card-1 .project-1-title::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #389cdc; 
+  background-color: #389cdc;
   transition: width 0.5s ease;
 }
 
@@ -408,7 +407,7 @@ textarea:hover {
 
 .project-card-2 {
   opacity: 0;
-  background-color: #FFF;
+  background-color: #fff;
   animation: card-slid-in 1s forwards;
   animation-delay: 0.25s;
 }
@@ -418,13 +417,13 @@ textarea:hover {
 }
 
 .project-card-2 .project-2-title::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #389cdc; 
+  background-color: #389cdc;
   transition: width 0.5s ease;
 }
 
@@ -434,7 +433,7 @@ textarea:hover {
 
 .project-card-3 {
   opacity: 0;
-  background-color: #FFF;
+  background-color: #fff;
   animation: card-slid-in 1s forwards;
   animation-delay: 0.75s;
 }
@@ -444,13 +443,13 @@ textarea:hover {
 }
 
 .project-card-3 .project-3-title::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #389cdc; 
+  background-color: #389cdc;
   transition: width 0.75s ease;
 }
 
@@ -460,7 +459,7 @@ textarea:hover {
 
 .project-card-4 {
   opacity: 0;
-  background-color: #FFF;
+  background-color: #fff;
   animation: card-slid-in 1s forwards;
   animation-delay: 0.5s;
 }
@@ -470,13 +469,13 @@ textarea:hover {
 }
 
 .project-card-4 .project-4-title::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #389cdc; 
+  background-color: #389cdc;
   transition: width 0.5s ease;
 }
 
@@ -542,7 +541,9 @@ textarea:focus {
 
 .typing-contact {
   width: 10.1ch;
-  animation: typing 0.75s steps(10) forwards, blink-title 1s step-end forwards;
+  animation:
+    typing 0.75s steps(10) forwards,
+    blink-title 1s step-end forwards;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -621,7 +622,9 @@ textarea:focus {
 .animated-check {
   opacity: 0;
   border: none;
-  animation: scaleUp 0.5s 1s forwards, changeColors 1s 1s forwards;
+  animation:
+    scaleUp 0.5s 1s forwards,
+    changeColors 1s 1s forwards;
 }
 
 @keyframes scaleUp {
@@ -694,67 +697,100 @@ textarea:focus {
   animation: dotBlink steps(3) 1s infinite;
 }
 
+/* Fluid Typography & Animations */
+:root {
+  --fs-xl: clamp(2rem, 5vw, 4rem);
+  --fs-lg: clamp(1.2rem, 3vw, 2rem);
+  --fs-md: clamp(1rem, 2vw, 1.5rem);
+}
 
+/* Profile Card Styling - Clean Tech/Dev Theme */
+.profile-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #000;
+  background-color: #000;
+  box-shadow: 15px 15px 0px 0px #389cdc;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+  animation: morph 8s ease-in-out infinite;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
 
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
 
-
-
-
-@media (max-width: 768px) {
-  .typing-home {
-    font-size: 6vw;
-    width: 19.1ch;
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
-  .typing-about {
-    font-size: 6vw;
-    width: 5.1ch;
+
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
   }
-  .typing-projects {
-    font-size: 6vw;
-    width: 10.1ch;
-  }
-  .typing-contact {
-    font-size: 6vw;
-    width: 10.1ch;
-  }
-  .speech-bubble-background {
-    padding-top: 30px;
-  }
-  .speech-bubble h1 {
-    font-size: 16px;
-    font-family: var(--secondary-font);
+
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
 }
 
-@media (max-width: 992px) {
-  .typing-home {
-    font-size: 6vw;
-  }
-  .typing-about {
-    font-size: 8vw;
-  }
-  .typing-projects {
-    font-size: 8vw;
-  }
-  .typing-contact {
-    font-size: 8vw;
-  }
-  .speech-bubble-background {
-    padding-top: 40px;
-  }
+/* Entry Animation handled by Framer Motion in JSX */
+
+.typing-home {
+  width: 19ch;
+  animation:
+    typing 1.5s steps(19),
+    blink 1s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: var(--fs-xl);
 }
 
-@media (min-width: 1196px) {
-  .typing-home {
-    font-size: 4vw;
-  }
-  .typing-about {
-    font-size: 4vw;
-  }
-  .typing-projects {
-    font-size: 4vw;
-  }
-  .typing-contact {
-    font-size: 4vw;
-  }
+.typing-about {
+  width: 5ch;
+  animation:
+    typing 0.5s steps(5) forwards,
+    blink-title 1s step-end forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: var(--fs-xl);
+}
+
+.typing-projects {
+  width: 10ch;
+  animation:
+    typing 0.75s steps(10) forwards,
+    blink-title 1s step-end forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: var(--fs-xl);
+}
+
+.typing-contact {
+  width: 10.1ch;
+  animation:
+    typing 0.75s steps(10) forwards,
+    blink-title 1s step-end forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: var(--fs-xl);
+}
+
+.intro-text {
+  font-family: var(--secondary-font);
+  font-size: var(--fs-md);
+  margin-top: 1.5rem;
 }

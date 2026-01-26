@@ -37,10 +37,22 @@ const NavBar = (props) => {
 
       <div className='hidden lg:block'>
         <div className='flex flex-row space-x-10'>
-            <Link to="/" className={`text-xl font-bold ${active === "home" ? "navbar-item-active" : "navbar-item"}`}>home</Link>
-            <Link to="/about" className={`text-xl font-bold ${active === "about" ? "navbar-item-active" : "navbar-item"}`}>about</Link>
-            <Link to="/projects" className={`text-xl font-bold ${active === "projects" ? "navbar-item-active" : "navbar-item"}`}>projects</Link>
-            <Link to="/contact" className={`text-xl font-bold ${active === "contact" ? "navbar-item-active" : "navbar-item"}`}>contact</Link>
+            <Link to="/" className={`text-xl font-bold relative group ${active === "home" ? "" : "opacity-80 hover:opacity-100"}`}>
+                home
+                <span className={`absolute bottom-0 left-0 h-[2px] bg-[#389cdc] transition-all duration-300 ${active === "home" ? "w-full" : "w-0 group-hover:w-full"}`}></span>
+            </Link>
+            <Link to="/about" className={`text-xl font-bold relative group ${active === "about" ? "" : "opacity-80 hover:opacity-100"}`}>
+                about
+                <span className={`absolute bottom-0 left-0 h-[2px] bg-[#389cdc] transition-all duration-300 ${active === "about" ? "w-full" : "w-0 group-hover:w-full"}`}></span>
+            </Link>
+            <Link to="/projects" className={`text-xl font-bold relative group ${active === "projects" ? "" : "opacity-80 hover:opacity-100"}`}>
+                projects
+                <span className={`absolute bottom-0 left-0 h-[2px] bg-[#389cdc] transition-all duration-300 ${active === "projects" ? "w-full" : "w-0 group-hover:w-full"}`}></span>
+            </Link>
+            <Link to="/contact" className={`text-xl font-bold relative group ${active === "contact" ? "" : "opacity-80 hover:opacity-100"}`}>
+                contact
+                <span className={`absolute bottom-0 left-0 h-[2px] bg-[#389cdc] transition-all duration-300 ${active === "contact" ? "w-full" : "w-0 group-hover:w-full"}`}></span>
+            </Link>
         </div>
       </div>
     </div>

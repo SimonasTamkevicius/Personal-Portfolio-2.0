@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
 import NavBar from './NavBar';
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
@@ -33,10 +34,27 @@ const About = () => {
                 </div>
             </div>
             <div className='lg:col-start-1 lg:col-end-6 flex justify-end items-end'>
-                <div className='flex flex-row mx-0 lg:space-x-2 lg:pr-10 pt-36 lg:absolute bottom-0 left-0 image-container'>
-                    <div className='image-slide-up'>
-                        <img src='/simonasAboutImageNoBackground.png' className='w-56 lg:w-60' />
-                    </div>
+                <div className='flex flex-row mx-0 lg:space-x-2 lg:pr-20 pt-36 lg:absolute bottom-0 left-0 image-container'>
+                    <motion.div 
+                        initial={{ y: 200, opacity: 0 }}
+                        animate={{ 
+                            y: [200, 0, -10, 0],
+                            opacity: 1 
+                        }}
+                        transition={{
+                            y: {
+                                duration: 1.2,
+                                type: "spring",
+                                bounce: 0.4
+                            },
+                            opacity: { duration: 0.5 }
+                        }}
+                    >
+                        <motion.img 
+                            src='/simonasAboutImageNoBackground.png' 
+                            className='w-56 lg:w-60 drop-shadow-2xl' 
+                        />
+                    </motion.div>
                     <div className='flex flex-col justify-center items-center relative md:mx-10 lg:mx-0 -top-24 max-w-[250px] speech-bubble speech-bubble-animation'>
                         <h1 className='font-semibold text-md lg:text-xl text-center pl-2 md:text-xl'>check out my <span className='projects-link'><Link to="/projects">projects</Link></span></h1>
                     </div>
@@ -48,4 +66,3 @@ const About = () => {
 }
 
 export default About;
-
