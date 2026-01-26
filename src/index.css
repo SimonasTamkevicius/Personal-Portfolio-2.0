@@ -712,10 +712,17 @@ textarea:focus {
   border: 3px solid #000;
   background-color: #000;
   box-shadow: 15px 15px 0px 0px #389cdc;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
-  animation: morph 8s ease-in-out infinite;
+  /* Start with the initial border-radius, morph kicks in after entry animation */
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  /* Delay morph animation until Framer Motion entry (~0.8s) completes */
+  animation: morph 8s ease-in-out 1s infinite;
+  /* Fix Safari rendering issues */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  transform: translateZ(0);
 }
 
 .profile-image {
