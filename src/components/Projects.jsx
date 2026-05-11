@@ -31,16 +31,14 @@ const projectsData = [
     visitText: "visit",
   },
   {
-    fileName: "bead-boutique.tsx",
-    title: "the bead boutique",
-    description: "Full-stack e-commerce app with Auth & Stripe payment.",
+    fileName: "verso.tsx",
+    title: "verso",
+    description: "Stock analysis and portfolio management service",
     techStack: [
-      { name: "React", icon: "/reactIcon.png" },
-      { name: "Node.js", icon: "/nodeJSIcon.png" },
-      { name: "Stripe", icon: "/stripeIcon.png" },
-      { name: "AWS", icon: "/awsIcon.png" },
+      { name: "NextJS", icon: "/nextjs.png" },
+      { name: "Vercel", icon: "/vercelIcon.png" },
     ],
-    link: "https://ecommerce-bead-store.onrender.com",
+    link: "https://stock-analysis-omega-one.vercel.app",
     visitText: "visit",
   },
 ];
