@@ -3,6 +3,17 @@ import NavBar from "./NavBar";
 
 const projectsData = [
   {
+    fileName: "traeva.tsx",
+    title: "traeva",
+    description: "Stock analysis and portfolio management service",
+    techStack: [
+      { name: "NextJS", icon: "/nextjs.png" },
+      { name: "Vercel", icon: "/vercelIcon.png" },
+    ],
+    link: "https://stock-analysis-omega-one.vercel.app",
+    visitText: "visit",
+  },
+  {
     fileName: "ofys.tsx",
     title: "OFYS",
     description:
@@ -28,17 +39,6 @@ const projectsData = [
       { name: "AWS", icon: "/awsIcon.png" },
     ],
     link: "https://comillainc.com",
-    visitText: "visit",
-  },
-  {
-    fileName: "verso.tsx",
-    title: "verso",
-    description: "Stock analysis and portfolio management service",
-    techStack: [
-      { name: "NextJS", icon: "/nextjs.png" },
-      { name: "Vercel", icon: "/vercelIcon.png" },
-    ],
-    link: "https://stock-analysis-omega-one.vercel.app",
     visitText: "visit",
   },
 ];

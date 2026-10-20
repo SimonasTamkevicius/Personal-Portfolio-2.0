@@ -20,7 +20,7 @@ const Home = () => {
               bounce: 0.5,
             }}
           >
-            <img src="/simonas2.jpeg" alt="Simonas" className="profile-image" />
+            <img src="/simonas3.jpeg" alt="Simonas" className="profile-image" />
           </motion.div>
         </div>
         <div className="col-span-7 flex flex-col justify-center items-center xl:items-start mt-10 xl:mt-0">
